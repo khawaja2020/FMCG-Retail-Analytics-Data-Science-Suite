@@ -17,6 +17,7 @@ Processes transaction-level retail records to isolate consumer household demogra
 *   **Timeline Integrity Verification:** Built a continuous true chronological 365-day fiscal year timeline object, executing a `left join` on the raw logs to validate pipeline health and isolate tracking anomalies (zero-volume Christmas holiday store closures).
 *   **Hypothesis Pricing Disparity:** Conducted a Welch’s Independent T-test evaluating the mean price paid per pack across cohorts. Mainstream Young and Midage singles/couples paid a significantly higher unit cost (p < 0.05), proving a strong willingness-to-pay and brand value sensitivity.
 *   **Strategic Proportional Affinity Indexing:** Developed an automated logic matrix to identify product brand and pack-size preferences relative to market baselines:
+
 $$
 \text{Affinity Index} = \left( \frac{\text{Target Segment Volume Bought}}{\text{Baseline Segment Volume Bought}} \right) \times 100
 $$
@@ -27,6 +28,7 @@ $$
 Evaluates the commercial growth impact of an experimental in-store layout test executed across Trial Locations (Stores 77, 86, and 88) between February 2019 and April 2019.
 
 *   **Similarity-Matching Engine (Pearson Correlation + Magnitude Distance):** Formulated an automated store matching algorithm scanning the 7-month pre-trial timeline. It scores control store candidates using a blended metric tracking trend direction (correlation) and sales volume scale (min-max proximity normalization):
+
 $$
 \text{Score} = (W \times \text{Correlation}) + ((1 - W) \times \text{Normalized Proximity})
 $$

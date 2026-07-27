@@ -32,10 +32,10 @@ Evaluates the commercial growth impact of an experimental in-store layout test e
 $$
 \text{Score} = (W \times \text{Correlation}) + ((1 - W) \times \text{Normalized Proximity})
 $$
+
     *   *Algorithm Output Matched Controls:* Store 77 → **Control 233** | Store 86 → **Control 155** | Store 88 → **Control 237**.
 *   **Calibrated Baseline Scaling Factors:** Applied a proportional scaling multiplier during the pre-trial phase to correct absolute volume baseline scale variances driven by physical store footprint sizes.
 *   **Statistical Significance Verification:** Executed a one-tailed independent T-test using the pre-trial standard deviation of percentage changes (df = 6). This evaluated whether performance changes indicated true campaign growth or normal retail data noise.
-*   **Dual-Axis Net-Uplift Dashboard:** Formulated a net net uplift visualization tracking Net Financial Revenue (Left Axis Bars) overlapping Net Unique Traffic Volume (Right Axis Line) from January to June to trace campaign efficiency and long-term customer retention.
 
 ### 📋 Blended Campaign Diagnostics
 1.  **Store 77:** Successful layout implementation. The pipeline isolates rolling monthly sales and customer counts, tracking performance directly against a 95% critical t-value threshold boundary to confirm significant positive performance spikes during active campaign months.

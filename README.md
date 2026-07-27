@@ -17,8 +17,9 @@ Processes transaction-level retail records to isolate consumer household demogra
 *   **Timeline Integrity Verification:** Built a continuous true chronological 365-day fiscal year timeline object, executing a `left join` on the raw logs to validate pipeline health and isolate tracking anomalies (zero-volume Christmas holiday store closures).
 *   **Hypothesis Pricing Disparity:** Conducted a Welch’s Independent T-test evaluating the mean price paid per pack across cohorts. Mainstream Young and Midage singles/couples paid a significantly higher unit cost (p < 0.05), proving a strong willingness-to-pay and brand value sensitivity.
 *   **Strategic Proportional Affinity Indexing:** Developed an automated logic matrix to identify product brand and pack-size preferences relative to market baselines:
-
+$$
 \[\text{Affinity Index} = \left( \frac{\% \text{ Target Segment Volume bought}}{\% \text{ Baseline Segment Volume bought}} \right) \times 100\]
+$$
 
 *   **Core Takeaway:** Mainstream Young/Midage consumers over-index heavily on premium brands (Kettle, Tyrrells) and large, sharing-sized party bags (330g, 270g, 380g), while significantly under-indexing on individual single-serve packs (70g, 90g).
 
@@ -26,9 +27,9 @@ Processes transaction-level retail records to isolate consumer household demogra
 Evaluates the commercial growth impact of an experimental in-store layout test executed across Trial Locations (Stores 77, 86, and 88) between February 2019 and April 2019.
 
 *   **Similarity-Matching Engine (Pearson Correlation + Magnitude Distance):** Formulated an automated store matching algorithm scanning the 7-month pre-trial timeline. It scores control store candidates using a blended metric tracking trend direction (correlation) and sales volume scale (min-max proximity normalization):
-
+$$
 \[\text{Score} = (W \times \text{Correlation}) + ((1 - W) \times \text{Normalized Proximity})\]
-
+$$
     *   *Algorithm Output Matched Controls:* Store 77 → **Control 233** | Store 86 → **Control 155** | Store 88 → **Control 237**.
 *   **Calibrated Baseline Scaling Factors:** Applied a proportional scaling multiplier during the pre-trial phase to correct absolute volume baseline scale variances driven by physical store footprint sizes.
 *   **Statistical Significance Verification:** Executed a one-tailed independent T-test using the pre-trial standard deviation of percentage changes (df = 6). This evaluated whether performance changes indicated true campaign growth or normal retail data noise.
